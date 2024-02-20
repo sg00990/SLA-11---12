@@ -3,7 +3,7 @@ import datetime
 import json
 
 st.set_page_config(
-    page_title="Tier 2 SLA Questionnaire",
+    page_title="SLA 11 & 12 Questionnaire",
     page_icon="💻",
     layout="wide"
 )
