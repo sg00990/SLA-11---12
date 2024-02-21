@@ -30,8 +30,6 @@ minutes_date = st.date_input(
 )
 
 
-st.write("**Date**")
-survey_date = st.date_input("survey_date", format="MM/DD/YYYY", label_visibility="collapsed")
 st.write("**Additional Comments**")
 survey_text = st.text_area("survey_text", label_visibility="collapsed")
 survey_text = survey_text.replace("\n", "  ").replace("'", "''").replace('"', r'\"')
@@ -43,7 +41,6 @@ with col3:
         data = {
             "sla_11_12_agenda_date": agenda_date,
             "sla_11_12_minutes_date": minutes_date,
-            "sla_11_12_date": survey_date,
             "sla_11_12_comments": survey_text
         }
 
